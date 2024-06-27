@@ -3,6 +3,7 @@ import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Components/InputField.dart';
 import 'package:toppos/Components/CustomButton.dart';
 import 'package:toppos/Screens/Homepage.dart';
+import 'package:toppos/Components/Logo.dart';
 
 class Loginscreen extends StatefulWidget {
   @override
@@ -25,10 +26,12 @@ class _LoginscreenState extends State<Loginscreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Image(
-                    image: AssetImage('images/logo.png'),
-                    height: 130,
-                    width: 130,
+                  Hero(
+                    tag: 'logo',
+                    child: Logo(
+                      height: 130,
+                      width: 130,
+                    ),
                   ),
                   InputField(
                     label: 'Email',

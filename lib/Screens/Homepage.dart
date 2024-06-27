@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Screens/UsersPage.dart';
 import 'package:animations/animations.dart';
+import 'package:toppos/Screens/Dashboard.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -113,7 +114,7 @@ class _HomepageState extends State<Homepage> {
       body: PageView(
         controller: _myPage,
         children: <Widget>[
-          Userspage(),
+          Dashboard(),
           Userspage(),
           Userspage(),
           Userspage(),
