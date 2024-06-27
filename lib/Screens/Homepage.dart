@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
             onPressed: openContainer,
             backgroundColor: kDarkYellow,
             child: Icon(
-              Icons.add,
+              Icons.menu,
               color: Colors.white,
             ),
           );
@@ -83,7 +83,7 @@ class _HomepageState extends State<Homepage> {
               iconSize: 30.0,
               padding: EdgeInsets.only(left: 28.0),
               icon: Icon(
-                Icons.settings,
+                Icons.store,
                 color: _selectedIndex == 2 ? kLightBlue : kBgCream,
               ),
               onPressed: () {
@@ -97,14 +97,13 @@ class _HomepageState extends State<Homepage> {
               iconSize: 30.0,
               padding: EdgeInsets.only(right: 28.0),
               icon: Icon(
-                Icons.logout,
-                color: _selectedIndex == 3 ? kDarkBlue : kLightBlue,
+                Icons.wallet,
+                color: _selectedIndex == 3 ? kLightBlue : kBgCream,
               ),
               onPressed: () {
                 setState(() {
                   _selectedIndex = 3;
-                  // sign out
-                  Navigator.pop(context);
+                  _myPage.jumpToPage(3);
                 });
               },
             ),
@@ -114,6 +113,7 @@ class _HomepageState extends State<Homepage> {
       body: PageView(
         controller: _myPage,
         children: <Widget>[
+          Userspage(),
           Userspage(),
           Userspage(),
           Userspage(),
