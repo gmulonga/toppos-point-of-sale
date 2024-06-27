@@ -30,7 +30,7 @@ class InputField extends StatelessWidget {
             label,
             style: TextStyle(
               color: kDarkBlue,
-              fontSize: 16.0,
+              fontSize: kNormalFontSize,
             ),
           ),
           SizedBox(height: 8.0),
@@ -50,7 +50,7 @@ class InputField extends StatelessWidget {
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(color: kLightBlue),
+                borderSide: BorderSide(color: kCream),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),

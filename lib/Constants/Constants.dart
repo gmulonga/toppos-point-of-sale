@@ -6,3 +6,5 @@ const kDarkYellow = Color(0xFFFF902B);
 const kLightYellow = Color(0xFFFFBA18);
 const kBgCream = Color(0xFFFDEEDC);
 const kCream = Color(0xFFFEFCF3);
+
+const double kNormalFontSize = 16.0;

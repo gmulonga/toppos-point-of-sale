@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Components/InputField.dart';
+import 'package:toppos/Components/CustomButton.dart';
+import 'package:toppos/Screens/Homepage.dart';
 
 class Loginscreen extends StatefulWidget {
   @override
@@ -21,11 +23,12 @@ class _LoginscreenState extends State<Loginscreen> {
             shrinkWrap: true,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Image(
                     image: AssetImage('images/logo.png'),
-                    height: 200,
-                    width: 200,
+                    height: 130,
+                    width: 130,
                   ),
                   InputField(
                     label: 'Email',
@@ -44,6 +47,20 @@ class _LoginscreenState extends State<Loginscreen> {
                       });
                     },
                   ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    child: CustomButton(
+                      txtColor: kLightYellow,
+                      bgColor: kDarkBlue,
+                      callBackFunction: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Homepage()),
+                        );
+                      },
+                      label: 'login',
+                    ),
+                  )
                 ],
               )
             ],
