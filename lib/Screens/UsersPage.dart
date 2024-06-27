@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toppos/Constants/Constants.dart';
 
 class Userspage extends StatefulWidget {
   const Userspage({super.key});
@@ -10,6 +11,11 @@ class Userspage extends StatefulWidget {
 class _UserspageState extends State<Userspage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: kBgCream,
+      body: Center(
+        child: Text('Users Screen'),
+      ),
+    );
   }
 }

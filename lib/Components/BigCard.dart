@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:toppos/Constants/Constants.dart';
 
-class Smallcard extends StatefulWidget {
-  Smallcard({
+class Bigcard extends StatefulWidget {
+  Bigcard({
     required this.color,
     required this.icon,
     required this.label,
     required this.total,
+    required this.navIcon,
   });
 
   final String label;
   final IconData icon;
+  final IconData navIcon;
   final Color color;
   final String total;
 
   @override
-  State<Smallcard> createState() => _SmallcardState();
+  State<Bigcard> createState() => _BigcardState();
 }
 
-class _SmallcardState extends State<Smallcard> {
+class _BigcardState extends State<Bigcard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 150,
       decoration: BoxDecoration(
         color: widget.color,
         borderRadius: BorderRadius.circular(kRadius),
@@ -38,26 +40,32 @@ class _SmallcardState extends State<Smallcard> {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            Text(
+              widget.total,
+              style: TextStyle(color: kLightBlue, fontSize: 28),
+            ),
+            Icon(
+              widget.icon,
+              size: 50,
+              color: kLightBlue,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  widget.total,
-                  style: TextStyle(fontSize: 20, color: kLightBlue),
+                  widget.label,
+                  style:
+                      TextStyle(fontSize: kNormalFontSize, color: kLightBlue),
                 ),
                 Icon(
-                  widget.icon,
+                  widget.navIcon,
                   size: 30,
                   color: kLightBlue,
                 )
               ],
             ),
-            Text(
-              widget.label,
-              style: TextStyle(color: kLightBlue, fontSize: kNormalFontSize),
-            )
           ],
         ),
       ),

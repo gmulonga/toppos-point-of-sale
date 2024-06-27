@@ -8,5 +8,5 @@ const kBgCream = Color(0xFFFDEEDC);
 const kCream = Color(0xFFFEFCF3);
 
 const double kNormalFontSize = 16.0;
-const kCornerRadius = 15;
+const double kRadius = 15;
 const double kHorizontalPadding = 15;

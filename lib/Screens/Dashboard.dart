@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toppos/Components/Logo.dart';
 import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Components/SmallCard.dart';
+import 'package:toppos/Components/BigCard.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -18,7 +19,8 @@ class _DashboardState extends State<Dashboard> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: kHorizontalPadding),
+              padding: EdgeInsets.symmetric(
+                  horizontal: kHorizontalPadding, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -62,33 +64,124 @@ class _DashboardState extends State<Dashboard> {
             ),
             Padding(
               padding: EdgeInsets.symmetric(
-                  horizontal: kHorizontalPadding, vertical: 15),
+                  horizontal: kHorizontalPadding, vertical: 25),
               child: Row(children: [
-                Smallcard(
-                  color: kCream,
-                  icon: Icons.more_vert,
-                  label: 'Sales',
-                  total: '1.7M',
+                Expanded(
+                  child: Smallcard(
+                    color: kCream,
+                    icon: Icons.more_vert,
+                    label: 'Sales',
+                    total: '1.7M',
+                  ),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Smallcard(
-                  color: kCream,
-                  icon: Icons.more_vert,
-                  label: 'Suppliers',
-                  total: '6',
+                Expanded(
+                  child: Smallcard(
+                    color: kCream,
+                    icon: Icons.more_vert,
+                    label: 'Suppliers',
+                    total: '6',
+                  ),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Smallcard(
-                  color: kCream,
-                  icon: Icons.more_vert,
-                  label: 'Products',
-                  total: '16',
+                Expanded(
+                  child: Smallcard(
+                    color: kCream,
+                    icon: Icons.more_vert,
+                    label: 'Products',
+                    total: '16',
+                  ),
                 ),
               ]),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: kHorizontalPadding),
+              child: Container(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Bigcard(
+                          color: kCream,
+                          icon: Icons.money,
+                          navIcon: Icons.arrow_circle_right,
+                          label: 'Credit Sales',
+                          total: '187,000'),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Smallcard(
+                            color: kCream,
+                            icon: Icons.more_vert,
+                            label: 'Products',
+                            total: '16',
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Smallcard(
+                            color: kCream,
+                            icon: Icons.more_vert,
+                            label: 'Products',
+                            total: '16',
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                  horizontal: kHorizontalPadding, vertical: 25),
+              child: Container(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Smallcard(
+                            color: kCream,
+                            icon: Icons.more_vert,
+                            label: 'Products',
+                            total: '16',
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Smallcard(
+                            color: kCream,
+                            icon: Icons.more_vert,
+                            label: 'Products',
+                            total: '16',
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Expanded(
+                      child: Bigcard(
+                          color: kCream,
+                          icon: Icons.money,
+                          navIcon: Icons.arrow_circle_right,
+                          label: 'Credit Sales',
+                          total: '187,000'),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
