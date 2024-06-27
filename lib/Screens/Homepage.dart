@@ -3,6 +3,7 @@ import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Screens/UsersPage.dart';
 import 'package:animations/animations.dart';
 import 'package:toppos/Screens/Dashboard.dart';
+import 'package:toppos/Screens/StoresScreen.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -116,7 +117,7 @@ class _HomepageState extends State<Homepage> {
         children: <Widget>[
           Dashboard(),
           Userspage(),
-          Userspage(),
+          StoresScreen(),
           Userspage(),
         ],
         physics: NeverScrollableScrollPhysics(),
