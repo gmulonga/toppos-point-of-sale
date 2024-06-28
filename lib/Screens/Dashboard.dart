@@ -123,11 +123,15 @@ class _DashboardState extends State<Dashboard> {
                     children: [
                       Expanded(
                         child: Bigcard(
-                            color: kCream,
-                            icon: Icons.money,
-                            navIcon: Icons.arrow_circle_right,
-                            label: 'Credit Sales',
-                            total: '187,000'),
+                          onPressed: () {
+                            return Userspage();
+                          },
+                          color: kCream,
+                          icon: Icons.money,
+                          navIcon: Icons.arrow_circle_right,
+                          label: 'Credit Sales',
+                          total: '187,000',
+                        ),
                       ),
                       SizedBox(
                         width: 10,
@@ -203,11 +207,15 @@ class _DashboardState extends State<Dashboard> {
                       ),
                       Expanded(
                         child: Bigcard(
-                            color: kCream,
-                            icon: Icons.money,
-                            navIcon: Icons.arrow_circle_right,
-                            label: 'Credit Sales',
-                            total: '187,000'),
+                          onPressed: () {
+                            return Userspage();
+                          },
+                          color: kCream,
+                          icon: Icons.money,
+                          navIcon: Icons.arrow_circle_right,
+                          label: 'Credit Sales',
+                          total: '187,000',
+                        ),
                       ),
                     ],
                   ),
