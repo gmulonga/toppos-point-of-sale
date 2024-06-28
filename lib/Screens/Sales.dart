@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Components/Table.dart';
 
-class Suppliers extends StatefulWidget {
+class Sales extends StatefulWidget {
   @override
-  State<Suppliers> createState() => _SuppliersState();
+  State<Sales> createState() => _SalesState();
 }
 
-class _SuppliersState extends State<Suppliers> {
+class _SalesState extends State<Sales> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class _SuppliersState extends State<Suppliers> {
               Padding(
                 padding: EdgeInsets.only(right: 15, left: 15, top: 15),
                 child: Text(
-                  'Suppliers',
+                  'Sales',
                   style: TextStyle(fontSize: kTitleFontSize, color: kLightBlue),
                 ),
               ),

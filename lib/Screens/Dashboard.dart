@@ -8,6 +8,12 @@ import 'package:toppos/Screens/UsersPage.dart';
 import 'package:toppos/Screens/CreditSales.dart';
 import 'package:toppos/Screens/Paidcredits.dart';
 import 'package:toppos/Screens/suppliers.dart';
+import 'package:toppos/Screens/Products.dart';
+import 'package:toppos/Screens/NetSales.dart';
+import 'package:toppos/Screens/Customers.dart';
+import 'package:toppos/Screens/ProductCategories.dart';
+import 'package:toppos/Screens/Sales.dart';
+import 'package:toppos/Screens/TotalSales.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -84,7 +90,7 @@ class _DashboardState extends State<Dashboard> {
                       label: 'Sales',
                       total: '1.7M',
                       onPressed: () {
-                        return Userspage();
+                        return Sales();
                       },
                     ),
                   ),
@@ -112,7 +118,7 @@ class _DashboardState extends State<Dashboard> {
                       label: 'Products',
                       total: '16',
                       onPressed: () {
-                        return Userspage();
+                        return Products();
                       },
                     ),
                   ),
@@ -148,7 +154,7 @@ class _DashboardState extends State<Dashboard> {
                               label: 'Total Sales Today',
                               total: '16',
                               onPressed: () {
-                                return Userspage();
+                                return Totalsales();
                               },
                             ),
                             SizedBox(
@@ -160,7 +166,7 @@ class _DashboardState extends State<Dashboard> {
                               label: 'Net Sales',
                               total: '16',
                               onPressed: () {
-                                return Userspage();
+                                return Netsales();
                               },
                             ),
                           ],
@@ -186,7 +192,7 @@ class _DashboardState extends State<Dashboard> {
                               label: 'Customers',
                               total: '16',
                               onPressed: () {
-                                return Userspage();
+                                return Customers();
                               },
                             ),
                             SizedBox(
@@ -198,7 +204,7 @@ class _DashboardState extends State<Dashboard> {
                               label: 'Product Categories',
                               total: '16',
                               onPressed: () {
-                                return Userspage();
+                                return Productcategories();
                               },
                             ),
                           ],
