@@ -5,6 +5,7 @@ import 'package:toppos/Components/SmallCard.dart';
 import 'package:toppos/Components/BigCard.dart';
 import 'package:toppos/Components/PieChart.dart';
 import 'package:toppos/Screens/UsersPage.dart';
+import 'package:toppos/Screens/CreditSales.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -123,7 +124,7 @@ class _DashboardState extends State<Dashboard> {
                       Expanded(
                         child: Bigcard(
                           onPressed: () {
-                            return Userspage();
+                            return Creditsales();
                           },
                           color: kCream,
                           icon: Icons.money,
