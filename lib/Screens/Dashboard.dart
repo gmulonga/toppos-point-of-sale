@@ -4,6 +4,7 @@ import 'package:toppos/Constants/Constants.dart';
 import 'package:toppos/Components/SmallCard.dart';
 import 'package:toppos/Components/BigCard.dart';
 import 'package:toppos/Components/PieChart.dart';
+import 'package:toppos/Screens/UsersPage.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -80,6 +81,9 @@ class _DashboardState extends State<Dashboard> {
                       icon: Icons.more_vert,
                       label: 'Sales',
                       total: '1.7M',
+                      onPressed: () {
+                        return Userspage();
+                      },
                     ),
                   ),
                   SizedBox(
@@ -91,6 +95,9 @@ class _DashboardState extends State<Dashboard> {
                       icon: Icons.more_vert,
                       label: 'Suppliers',
                       total: '6',
+                      onPressed: () {
+                        return Userspage();
+                      },
                     ),
                   ),
                   SizedBox(
@@ -102,6 +109,9 @@ class _DashboardState extends State<Dashboard> {
                       icon: Icons.more_vert,
                       label: 'Products',
                       total: '16',
+                      onPressed: () {
+                        return Userspage();
+                      },
                     ),
                   ),
                 ]),
@@ -131,6 +141,9 @@ class _DashboardState extends State<Dashboard> {
                               icon: Icons.more_vert,
                               label: 'Products',
                               total: '16',
+                              onPressed: () {
+                                return Userspage();
+                              },
                             ),
                             SizedBox(
                               height: 10,
@@ -140,6 +153,9 @@ class _DashboardState extends State<Dashboard> {
                               icon: Icons.more_vert,
                               label: 'Products',
                               total: '16',
+                              onPressed: () {
+                                return Userspage();
+                              },
                             ),
                           ],
                         ),
@@ -163,6 +179,9 @@ class _DashboardState extends State<Dashboard> {
                               icon: Icons.more_vert,
                               label: 'Products',
                               total: '16',
+                              onPressed: () {
+                                return Userspage();
+                              },
                             ),
                             SizedBox(
                               height: 10,
@@ -172,6 +191,9 @@ class _DashboardState extends State<Dashboard> {
                               icon: Icons.more_vert,
                               label: 'Products',
                               total: '16',
+                              onPressed: () {
+                                return Userspage();
+                              },
                             ),
                           ],
                         ),
