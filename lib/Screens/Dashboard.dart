@@ -5,6 +5,9 @@ import 'package:toppos/Components/SmallCard.dart';
 import 'package:toppos/Components/BigCard.dart';
 import 'package:toppos/Components/PieChart.dart';
 import 'package:toppos/Screens/UsersPage.dart';
+import 'package:toppos/Screens/CreditSales.dart';
+import 'package:toppos/Screens/Paidcredits.dart';
+import 'package:toppos/Screens/suppliers.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -43,8 +46,7 @@ class _DashboardState extends State<Dashboard> {
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
                 child: Text(
                   'Dashboard',
-                  style:
-                      TextStyle(fontSize: kNormalFontSize, color: kLightBlue),
+                  style: TextStyle(fontSize: kTitleFontSize, color: kLightBlue),
                 ),
               ),
               Padding(
@@ -96,7 +98,7 @@ class _DashboardState extends State<Dashboard> {
                       label: 'Suppliers',
                       total: '6',
                       onPressed: () {
-                        return Userspage();
+                        return Suppliers();
                       },
                     ),
                   ),
@@ -124,7 +126,7 @@ class _DashboardState extends State<Dashboard> {
                       Expanded(
                         child: Bigcard(
                           onPressed: () {
-                            return Userspage();
+                            return Creditsales();
                           },
                           color: kCream,
                           icon: Icons.money,
@@ -143,7 +145,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Total Sales Today',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -155,7 +157,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Net Sales',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -180,8 +182,8 @@ class _DashboardState extends State<Dashboard> {
                           children: [
                             Smallcard(
                               color: kCream,
-                              icon: Icons.more_vert,
-                              label: 'Products',
+                              icon: Icons.group,
+                              label: 'Customers',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -193,7 +195,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Product Categories',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -208,12 +210,12 @@ class _DashboardState extends State<Dashboard> {
                       Expanded(
                         child: Bigcard(
                           onPressed: () {
-                            return Userspage();
+                            return Paidcredits();
                           },
                           color: kCream,
                           icon: Icons.money,
                           navIcon: Icons.arrow_circle_right,
-                          label: 'Credit Sales',
+                          label: 'Paid Credits',
                           total: '187,000',
                         ),
                       ),
