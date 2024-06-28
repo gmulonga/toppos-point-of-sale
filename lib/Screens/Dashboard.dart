@@ -143,7 +143,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Total Sales Today',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -155,7 +155,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Net Sales',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -180,8 +180,8 @@ class _DashboardState extends State<Dashboard> {
                           children: [
                             Smallcard(
                               color: kCream,
-                              icon: Icons.more_vert,
-                              label: 'Products',
+                              icon: Icons.group,
+                              label: 'Customers',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -193,7 +193,7 @@ class _DashboardState extends State<Dashboard> {
                             Smallcard(
                               color: kCream,
                               icon: Icons.more_vert,
-                              label: 'Products',
+                              label: 'Product Categories',
                               total: '16',
                               onPressed: () {
                                 return Userspage();
@@ -213,7 +213,7 @@ class _DashboardState extends State<Dashboard> {
                           color: kCream,
                           icon: Icons.money,
                           navIcon: Icons.arrow_circle_right,
-                          label: 'Credit Sales',
+                          label: 'Paid Credits',
                           total: '187,000',
                         ),
                       ),
