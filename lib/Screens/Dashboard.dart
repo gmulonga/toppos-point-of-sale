@@ -6,6 +6,8 @@ import 'package:toppos/Components/BigCard.dart';
 import 'package:toppos/Components/PieChart.dart';
 import 'package:toppos/Screens/UsersPage.dart';
 import 'package:toppos/Screens/CreditSales.dart';
+import 'package:toppos/Screens/Paidcredits.dart';
+import 'package:toppos/Screens/suppliers.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -96,7 +98,7 @@ class _DashboardState extends State<Dashboard> {
                       label: 'Suppliers',
                       total: '6',
                       onPressed: () {
-                        return Userspage();
+                        return Suppliers();
                       },
                     ),
                   ),
@@ -208,7 +210,7 @@ class _DashboardState extends State<Dashboard> {
                       Expanded(
                         child: Bigcard(
                           onPressed: () {
-                            return Userspage();
+                            return Paidcredits();
                           },
                           color: kCream,
                           icon: Icons.money,
