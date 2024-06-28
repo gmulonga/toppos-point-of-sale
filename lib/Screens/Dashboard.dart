@@ -43,8 +43,7 @@ class _DashboardState extends State<Dashboard> {
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
                 child: Text(
                   'Dashboard',
-                  style:
-                      TextStyle(fontSize: kNormalFontSize, color: kLightBlue),
+                  style: TextStyle(fontSize: kTitleFontSize, color: kLightBlue),
                 ),
               ),
               Padding(
